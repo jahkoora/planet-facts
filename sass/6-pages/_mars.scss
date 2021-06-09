@@ -1,0 +1,27 @@
+.mars-image {
+	width: 8.0625rem;
+}
+
+.mars-image-geo {
+	width: 6rem;
+}
+
+@media (min-width: 786px) {
+	.mars-image {
+		width: 13.3125rem;
+	}
+	#planet-image-geo.mars-image-geo {
+		width: 9rem;
+		top: 90%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.mars-image {
+		width: 21rem;
+	}
+	#planet-image-geo.mars-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}

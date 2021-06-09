@@ -1,0 +1,42 @@
+.planet-stats > * {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	border: 1px solid $grey-dark;
+	padding: 0 1.5rem;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+	h3 {
+		line-height: 200%;
+		font-size: 0.65rem;
+		margin: auto 0;
+		color: rgba($primary-color, 0.5);
+	}
+	p {
+		font-family: "Antonio", sans-serif;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+}
+
+@media (min-width: 786px) {
+	.planet-stats {
+		display: flex;
+		justify-content: space-between;
+		gap: 1.875rem;
+
+		h3 {
+			margin-top: 1.25rem;
+		}
+
+		& > * {
+			flex-direction: column;
+			width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

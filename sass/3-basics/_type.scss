@@ -1,0 +1,58 @@
+// Font Family Imports
+
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+}
+h1,
+h2 {
+	font-family: "Antonio", sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 5rem;
+	line-height: 6.4375rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+	letter-spacing: -1.5;
+}
+
+h3,
+h4 {
+	font-family: "Spartan", sans-serif;
+	font-weight: 700;
+	line-height: 1.5625rem;
+}
+
+h3 {
+	font-size: 0.75rem;
+	letter-spacing: 2.6;
+}
+
+h4 {
+	font-size: 0.6875rem;
+	letter-spacing: 1;
+}
+
+p {
+	font-family: "Spartan", sans-serif;
+	font-size: 0.875rem;
+	line-height: 1.5625rem;
+}
+
+@media (min-width: 1440px) {
+	h2 {
+		font-size: 80px;
+	}
+	p {
+		font-size: 14px;
+	}
+}

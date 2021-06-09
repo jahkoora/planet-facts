@@ -1,0 +1,27 @@
+.mercury-image {
+	width: 6.9375rem;
+}
+
+.mercury-image-geo {
+	width: 6rem;
+}
+
+@media (min-width: 786px) {
+	.mercury-image {
+		width: 11.5rem;
+	}
+	#planet-image-geo.mercury-image-geo {
+		width: 8rem;
+		top: 90%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.mercury-image {
+		width: 18.125rem;
+	}
+	#planet-image-geo.mercury-image-geo {
+		width: 163px;
+		top: 75%;
+	}
+}

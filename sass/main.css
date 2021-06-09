@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../../assets/background-stars.svg);
+  background-color: #070724;
+  color: #fff;
+}
+
+body {
+  padding: 0rem 1.5rem 2.9375rem;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 786px) {
+  body {
+    padding: 0rem 3.1875rem 2.9375rem;
+  }
+}
+
+@media (min-width: 786px) {
+  .btn {
+    border: 1px solid #38384f;
+    padding: 1rem 1.75rem !important;
+    color: white;
+  }
+  .btn span {
+    margin-right: 1.75rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .btn:hover {
+    background-color: #38384f;
+  }
+  .btn.active {
+    background-color: var(--planet-color);
+  }
+  .mobile-hidden {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 786px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6.4375rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -1.5;
+}
+
+h3,
+h4 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 1.5625rem;
+}
+
+h3 {
+  font-size: 0.75rem;
+  letter-spacing: 2.6;
+}
+
+h4 {
+  font-size: 0.6875rem;
+  letter-spacing: 1;
+}
+
+p {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
+}
+
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 80px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.logo-text {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.265625rem;
+  text-transform: uppercase;
+  letter-spacing: -1.05;
+}
+
+.nav-list {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  line-height: 1.5625rem;
+  letter-spacing: 1.3px;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.mobile-menu .nav-links {
+  position: relative;
+  padding-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-menu .menu-overlay {
+  padding: 0rem 1.5rem 2.9375rem;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  background-color: #070724;
+  top: calc(+100%);
+  left: -24px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.mobile-menu .menu-overlay.open {
+  visibility: visible;
+}
+
+.mobile-menu .chevron {
+  border-color: #38384f;
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  right: 0.3125rem;
+  position: relative;
+  top: 0.3125rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+.mobile-menu .mercury::before,
+.mobile-menu .venus::before,
+.mobile-menu .earth::before,
+.mobile-menu .mars::before,
+.mobile-menu .jupiter::before,
+.mobile-menu .saturn::before,
+.mobile-menu .uranus::before,
+.mobile-menu .neptune::before {
+  content: "";
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #419ebb;
+  left: 0;
+}
+
+.mobile-menu .venus::before {
+  background-color: #eda249;
+}
+
+.mobile-menu .earth::before {
+  background-color: #6d2ed5;
+}
+
+.mobile-menu .mars::before {
+  background-color: #d14c32;
+}
+
+.mobile-menu .jupiter::before {
+  background-color: #d83a34;
+}
+
+.mobile-menu .saturn::before {
+  background-color: #cd5120;
+}
+
+.mobile-menu .uranus::before {
+  background-color: #1ec1a2;
+}
+
+.mobile-menu .neptune::before {
+  background-color: #2d68f0;
+}
+
+.mobile-menu li {
+  padding: 1.25rem 0;
+}
+
+.mobile-menu li:not(:last-child) {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+@media (min-width: 786px) {
+  .desktop-menu {
+    display: block;
+  }
+  .desktop-menu .logo {
+    text-align: center;
+  }
+  .desktop-menu .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 0.6875rem;
+    padding: 20px 52px;
+    position: relative;
+  }
+  .desktop-menu .nav-list::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    bottom: 0;
+    left: -50px;
+  }
+  a.nav-links-desktop {
+    position: relative;
+  }
+  a.nav-links-desktop.active::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  a.nav-links-desktop::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 0.25rem;
+    width: 100%;
+    background-color: var(--planet-color);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  .desktop-menu::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    bottom: 0;
+    left: -50px;
+  }
+  .desktop-menu .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+  .desktop-menu .nav-list::after {
+    display: none;
+  }
+  .desktop-menu .nav-list li {
+    margin: auto 0;
+  }
+  a.nav-links-desktop::after {
+    top: -40px;
+  }
+}
+
+#main-container {
+  max-width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-container {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 310px;
+  margin-top: 2.4375rem;
+  margin-bottom: 2.5625rem;
+}
+
+#planet-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#planet-image-geo {
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.source-p {
+  padding: 1.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.source-p a {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+.source-p a::after {
+  content: url("/assets/icon-source.svg");
+  margin-left: 0.3125rem;
+}
+
+.planet-stats {
+  width: 100%;
+}
+
+@media (min-width: 786px) {
+  .wrapper-2col {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4.3125rem;
+  }
+  .source-p {
+    padding-left: 0;
+  }
+  .image-container {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #main-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wrapper-2col {
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+  .image-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    height: 650px;
+  }
+}
+
+.sub-menu {
+  font-family: "Spartan";
+  font-weight: 700;
+  font-size: 0.6rem;
+  line-height: 0.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  -webkit-box-ordinal-group: -1;
+      -ms-flex-order: -2;
+          order: -2;
+  letter-spacing: 2.6px;
+}
+
+@media (max-width: 786px) {
+  .sub-menu .mobile-sub-menu {
+    font-family: "Spartan";
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.625rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    -webkit-box-ordinal-group: -1 !important;
+        -ms-flex-order: -2 !important;
+            order: -2 !important;
+  }
+  .sub-menu a {
+    position: relative;
+    padding: 1.25rem 0;
+  }
+  .sub-menu a.active::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .sub-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.25rem;
+    width: 100%;
+    background-color: var(--planet-color);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+}
+
+@media (min-width: 786px) {
+  .sub-menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    padding: 1.75rem 0.75rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    font-size: 0.75rem;
+  }
+  .submenu a {
+    padding: 1.75rem 0.75rem;
+  }
+  .sub-menu a:nth-child(1) {
+    margin-top: auto;
+  }
+  .sub-menu a:last-child {
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sub-menu {
+    padding: 0;
+  }
+}
+
+.planet-stats > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #38384f;
+  padding: 0 1.5rem;
+}
+
+.planet-stats > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.planet-stats > * h3 {
+  line-height: 200%;
+  font-size: 0.65rem;
+  margin: auto 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.planet-stats > * p {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media (min-width: 786px) {
+  .planet-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.875rem;
+  }
+  .planet-stats h3 {
+    margin-top: 1.25rem;
+  }
+  .planet-stats > * {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .planet-stats > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.mercury-image {
+  width: 6.9375rem;
+}
+
+.mercury-image-geo {
+  width: 6rem;
+}
+
+@media (min-width: 786px) {
+  .mercury-image {
+    width: 11.5rem;
+  }
+  #planet-image-geo.mercury-image-geo {
+    width: 8rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mercury-image {
+    width: 18.125rem;
+  }
+  #planet-image-geo.mercury-image-geo {
+    width: 163px;
+    top: 75%;
+  }
+}
+
+.venus-image {
+  width: 9.625rem;
+}
+
+.venus-image-geo {
+  width: 7rem;
+}
+
+@media (min-width: 786px) {
+  .venus-image {
+    width: 15.625rem;
+  }
+  #planet-image-geo.venus-image-geo {
+    width: 10rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .venus-image {
+    width: 25rem;
+  }
+  #planet-image-geo.venus-image-geo {
+    width: 10.1875rem;
+    top: 75%;
+  }
+}
+
+.earth-image {
+  width: 10.8125rem;
+}
+
+.earth-image-geo {
+  width: 8rem;
+}
+
+@media (min-width: 786px) {
+  .earth-image {
+    width: 17.8125rem;
+  }
+  #planet-image-geo.earth-image-geo {
+    width: 11rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .earth-image {
+    width: 28.125rem;
+  }
+  #planet-image-geo.earth-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+
+.mars-image {
+  width: 8.0625rem;
+}
+
+.mars-image-geo {
+  width: 6rem;
+}
+
+@media (min-width: 786px) {
+  .mars-image {
+    width: 13.3125rem;
+  }
+  #planet-image-geo.mars-image-geo {
+    width: 9rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mars-image {
+    width: 21rem;
+  }
+  #planet-image-geo.mars-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+
+.jupiter-image {
+  width: 14rem;
+}
+
+.jupiter-image-geo {
+  width: 10rem;
+}
+
+@media (min-width: 786px) {
+  .jupiter-image {
+    width: 23.0625rem;
+  }
+  #planet-image-geo.jupiter-image-geo {
+    width: 12rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .jupiter-image {
+    width: 36.375rem;
+  }
+  #planet-image-geo.jupiter-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+
+.saturn-image {
+  width: 16rem;
+}
+
+.saturn-image-geo {
+  width: 10rem;
+}
+
+@media (min-width: 786px) {
+  .saturn-image {
+    width: 26.375rem;
+  }
+  #planet-image-geo.saturn-image-geo {
+    width: 13rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .saturn-image {
+    width: 36.375rem;
+  }
+  #planet-image-geo.saturn-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+
+.uranus-image {
+  width: 11rem;
+}
+
+.uranus-image-geo {
+  width: 8rem;
+}
+
+@media (min-width: 786px) {
+  .uranus-image {
+    width: 18.125rem;
+  }
+  #planet-image-geo.uranus-image-geo {
+    width: 12rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .uranus-image {
+    width: 28.625rem;
+  }
+  #planet-image-geo.uranus-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+
+.neptune-image {
+  width: 10.8125rem;
+}
+
+.neptune-image-geo {
+  width: 8rem;
+}
+
+@media (min-width: 786px) {
+  .neptune-image {
+    width: 17.8125rem;
+  }
+  #planet-image-geo.neptune-image-geo {
+    width: 12rem;
+    top: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .neptune-image {
+    width: 28.625rem;
+  }
+  #planet-image-geo.neptune-image-geo {
+    width: 11rem;
+    top: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

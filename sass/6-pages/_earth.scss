@@ -1,0 +1,27 @@
+.earth-image {
+	width: 10.8125rem;
+}
+
+.earth-image-geo {
+	width: 8rem;
+}
+
+@media (min-width: 786px) {
+	.earth-image {
+		width: 17.8125rem;
+	}
+	#planet-image-geo.earth-image-geo {
+		width: 11rem;
+		top: 90%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.earth-image {
+		width: 28.125rem;
+	}
+	#planet-image-geo.earth-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}

@@ -1,0 +1,26 @@
+.uranus-image {
+	width: 11rem;
+}
+
+.uranus-image-geo {
+	width: 8rem;
+}
+
+@media (min-width: 786px) {
+	.uranus-image {
+		width: 18.125rem;
+	}
+	#planet-image-geo.uranus-image-geo {
+		width: 12rem;
+		top: 90%;
+	}
+}
+@media (min-width: 1440px) {
+	.uranus-image {
+		width: 28.625rem;
+	}
+	#planet-image-geo.uranus-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}

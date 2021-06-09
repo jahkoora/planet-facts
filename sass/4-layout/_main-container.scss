@@ -1,0 +1,85 @@
+#main-container {
+	max-width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.image-container {
+	order: -1;
+	position: relative;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 310px;
+	margin-top: 2.4375rem;
+	margin-bottom: 2.5625rem;
+}
+
+#planet-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#planet-image-geo {
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.source-p {
+	padding: 1.75rem;
+	font-weight: 400;
+	color: rgba($primary-color, 0.5);
+	a {
+		font-weight: 700;
+		color: rgba($primary-color, 0.5);
+		text-decoration: underline;
+
+		&::after {
+			content: url("/assets/icon-source.svg");
+			margin-left: 0.3125rem;
+		}
+	}
+}
+
+.planet-stats {
+	width: 100%;
+}
+
+//tablet styles
+
+@media (min-width: 786px) {
+	.wrapper-2col {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		gap: 4.3125rem;
+	}
+	.source-p {
+		padding-left: 0;
+	}
+
+	.image-container {
+		height: 450px;
+	}
+}
+
+@media (min-width: 1440px) {
+	#main-container {
+		flex-direction: row;
+	}
+	.wrapper-2col {
+		display: block;
+		width: 100%;
+		flex: 0 0 30%;
+	}
+	.image-container {
+		flex: 0 0 70%;
+		height: 650px;
+	}
+}

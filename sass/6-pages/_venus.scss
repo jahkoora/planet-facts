@@ -1,0 +1,27 @@
+.venus-image {
+	width: 9.625rem;
+}
+
+.venus-image-geo {
+	width: 7rem;
+}
+
+@media (min-width: 786px) {
+	.venus-image {
+		width: 15.625rem;
+	}
+	#planet-image-geo.venus-image-geo {
+		width: 10rem;
+		top: 90%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.venus-image {
+		width: 25rem;
+	}
+	#planet-image-geo.venus-image-geo {
+		width: 10.1875rem;
+		top: 75%;
+	}
+}

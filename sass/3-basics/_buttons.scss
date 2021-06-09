@@ -1,0 +1,23 @@
+@media (min-width: 786px) {
+	.btn {
+		border: 1px solid $grey-dark;
+		padding: 1rem 1.75rem !important;
+		color: white;
+
+		span {
+			margin-right: 1.75rem;
+			color: rgba($primary-color, 0.5);
+		}
+
+		&:hover {
+			background-color: $grey-dark;
+		}
+
+		&.active {
+			background-color: var(--planet-color);
+		}
+	}
+	.mobile-hidden {
+		display: inline-block;
+	}
+}

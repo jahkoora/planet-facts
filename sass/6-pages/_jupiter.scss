@@ -1,0 +1,25 @@
+.jupiter-image {
+	width: 14rem;
+}
+
+.jupiter-image-geo {
+	width: 10rem;
+}
+@media (min-width: 786px) {
+	.jupiter-image {
+		width: 23.0625rem;
+	}
+	#planet-image-geo.jupiter-image-geo {
+		width: 12rem;
+		top: 90%;
+	}
+}
+@media (min-width: 1440px) {
+	.jupiter-image {
+		width: 36.375rem;
+	}
+	#planet-image-geo.jupiter-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}

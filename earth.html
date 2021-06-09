@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="stylesheet" href="sass/main.css" />
+		<title>Frontend Mentor | Planets fact site</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="container">
+					<div class="mobile-menu">
+						<div class="logo">
+							<p class="logo-text">The Planets</p>
+						</div>
+						<svg
+							id="hamburger"
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="17"
+						>
+							<g id="hamburger-color" fill="#FFF" fill-rule="evenodd">
+								<path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+							</g>
+						</svg>
+						<div id="mobile-menu-overlay" class="menu-overlay">
+							<ul class="nav-list">
+								<li class="nav-items">
+									<a href="/index.html" class="nav-links mercury"
+										>Mercury <span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="/venus.html" class="nav-links venus"
+										>Venus<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="earth.html" class="nav-links earth"
+										>Earth<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="mars.html" class="nav-links mars"
+										>Mars<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="jupiter.html" class="nav-links jupiter"
+										>Jupiter<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="saturn.html" class="nav-links saturn"
+										>Saturn<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="uranus.html" class="nav-links uranus"
+										>Uranus<span class="chevron"></span
+									></a>
+								</li>
+								<li class="nav-items">
+									<a href="neptune.html" class="nav-links neptune"
+										>Neptune<span class="chevron"></span
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="desktop-menu">
+						<div class="logo">
+							<p class="logo-text">The Planets</p>
+						</div>
+						<ul class="nav-list">
+							<li class="nav-items">
+								<a href="/index.html" class="nav-links-desktop">Mercury</a>
+							</li>
+							<li class="nav-items">
+								<a href="/venus.html" class="nav-links-desktop">Venus</a>
+							</li>
+							<li class="nav-items">
+								<a href="earth.html" class="nav-links-desktop">Earth</a>
+							</li>
+							<li class="nav-items">
+								<a href="mars.html" class="nav-links-desktop">Mars</a>
+							</li>
+							<li class="nav-items">
+								<a href="jupiter.html" class="nav-links-desktop">Jupiter</a>
+							</li>
+							<li class="nav-items">
+								<a href="saturn.html" class="nav-links-desktop">Saturn</a>
+							</li>
+							<li class="nav-items">
+								<a href="uranus.html" class="nav-links-desktop">Uranus</a>
+							</li>
+							<li class="nav-items">
+								<a href="neptune.html" class="nav-links-desktop">Neptune</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<main id="main-container">
+				<div class="image-container">
+					<img src="#" alt="" id="planet-image" class="earth-image" />
+					<img
+						src="#"
+						alt=""
+						id="planet-image-geo"
+						class="earth-image-geo hidden"
+					/>
+				</div>
+				<div class="wrapper-2col">
+					<div class="mobile-sub-menu sub-menu">
+						<a href="#" class="btn mobile-sub-menu-link overview active"
+							><span class="mobile-hidden">01</span>Overview</a
+						><a href="#" class="btn mobile-sub-menu-link structure"
+							><span class="mobile-hidden">02</span>Structure</a
+						><a href="#" class="btn mobile-sub-menu-link surface"
+							><span class="mobile-hidden">03</span>Surface</a
+						>
+					</div>
+					<div id="plant-content"><h2 id="planet-title"></h2></div>
+				</div>
+			</main>
+			<div class="planet-stats"></div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

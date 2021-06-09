@@ -1,0 +1,201 @@
+.logo-text {
+	font-family: "Antonio", sans-serif;
+	font-size: 1.75rem;
+	font-weight: 400;
+	line-height: 2.265625rem;
+	text-transform: uppercase;
+	letter-spacing: -1.05;
+}
+
+.nav-list {
+	font-family: "Spartan", sans-serif;
+	font-weight: 700;
+	font-size: 1.0625rem;
+	text-transform: uppercase;
+	line-height: 1.5625rem;
+	letter-spacing: 1.3px;
+}
+.desktop-menu {
+	display: none;
+}
+
+.mobile-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	.nav-links {
+		position: relative;
+		padding-left: 3rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu-overlay {
+		padding: 0rem 1.5rem 2.9375rem;
+		position: absolute;
+		z-index: 10;
+		height: 100vh;
+		width: 100%;
+		background-color: $secondary-color;
+		top: calc(+100%);
+		left: -24px;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		visibility: hidden;
+		&.open {
+			visibility: visible;
+		}
+	}
+	.chevron {
+		border-color: $grey-dark;
+		border-style: solid;
+		border-width: 0.1em 0.1em 0 0;
+		content: "";
+		display: inline-block;
+		height: 0.45em;
+		right: 0.3125rem;
+		position: relative;
+		top: 0.3125rem;
+		transform: rotate(45deg);
+		vertical-align: top;
+		width: 0.45em;
+	}
+
+	.mercury,
+	.venus,
+	.earth,
+	.mars,
+	.jupiter,
+	.saturn,
+	.uranus,
+	.neptune {
+		&::before {
+			content: "";
+			position: absolute;
+			width: 1.25rem;
+			height: 1.25rem;
+			border-radius: 50%;
+			background-color: $mercury-color;
+			left: 0;
+		}
+	}
+	.venus::before {
+		background-color: $venus-color;
+	}
+	.earth::before {
+		background-color: $earth-color;
+	}
+	.mars::before {
+		background-color: $mars-color;
+	}
+	.jupiter::before {
+		background-color: $jupiter-color;
+	}
+	.saturn::before {
+		background-color: $saturn-color;
+	}
+	.uranus::before {
+		background-color: $uranus-color;
+	}
+	.neptune::before {
+		background-color: $neptune-color;
+	}
+	li {
+		padding: 1.25rem 0;
+
+		&:not(:last-child) {
+			border-bottom: solid 1px rgba($primary-color, 0.1);
+		}
+	}
+}
+
+#hamburger {
+	cursor: pointer;
+}
+
+@media (min-width: 786px) {
+	.desktop-menu {
+		display: block;
+		.logo {
+			text-align: center;
+		}
+		.nav-list {
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			font-size: 0.6875rem;
+			padding: 20px 52px;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 1px;
+				background-color: rgba($primary-color, 0.1);
+				bottom: 0;
+				left: -50px;
+			}
+		}
+	}
+
+	a.nav-links-desktop {
+		position: relative;
+		&.active::after {
+			transform: scaleX(1);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: -20px;
+			left: 0;
+			height: 0.25rem;
+			width: 100%;
+			background-color: var(--planet-color);
+			transform: scaleX(0);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	.mobile-menu {
+		display: none;
+	}
+}
+
+@media (min-width: 1440px) {
+	.desktop-menu {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100vw;
+			height: 1px;
+			background-color: rgba($primary-color, 0.1);
+			bottom: 0;
+			left: -50px;
+		}
+
+		.nav-list {
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			padding: 0;
+			flex: 0 0 60%;
+
+			&::after {
+				display: none;
+			}
+
+			li {
+				margin: auto 0;
+			}
+		}
+	}
+	a.nav-links-desktop::after {
+		top: -40px;
+	}
+}

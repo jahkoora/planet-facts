@@ -1,0 +1,26 @@
+.neptune-image {
+	width: 10.8125rem;
+}
+
+.neptune-image-geo {
+	width: 8rem;
+}
+
+@media (min-width: 786px) {
+	.neptune-image {
+		width: 17.8125rem;
+	}
+	#planet-image-geo.neptune-image-geo {
+		width: 12rem;
+		top: 90%;
+	}
+}
+@media (min-width: 1440px) {
+	.neptune-image {
+		width: 28.625rem;
+	}
+	#planet-image-geo.neptune-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}

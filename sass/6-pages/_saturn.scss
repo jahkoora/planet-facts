@@ -1,0 +1,26 @@
+.saturn-image {
+	width: 16rem;
+}
+
+.saturn-image-geo {
+	width: 10rem;
+}
+
+@media (min-width: 786px) {
+	.saturn-image {
+		width: 26.375rem;
+	}
+	#planet-image-geo.saturn-image-geo {
+		width: 13rem;
+		top: 90%;
+	}
+}
+@media (min-width: 1440px) {
+	.saturn-image {
+		width: 36.375rem;
+	}
+	#planet-image-geo.saturn-image-geo {
+		width: 11rem;
+		top: 80%;
+	}
+}
