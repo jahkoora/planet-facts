@@ -321,6 +321,8 @@ header nav .nav-list a {
     width: 20px;
     height: 20px;
     border-radius: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   header nav .nav-list .nav-link:hover::before {
     content: '';
