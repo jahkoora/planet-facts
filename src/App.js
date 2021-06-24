@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from "./components/Header";
+import Planet from "./components/Planet";
+import data from "./data.json";
+import './App.css'
+
+export default function App() {
+   const [activePlanet, setActivePlanet] = useState(data[0]);
+   const [menuState, setMenuState] = useState(null)
+
+   function handleActivePlanet(planet, index) {
+      return setActivePlanet(data[index]);
+   }
+
+   return (
+      <>
+         <Header
+            planets={data}
+            menuState={menuState}
+            setMenuState={setMenuState}
+            handleActivePlanet={handleActivePlanet}
+            activePlanet={activePlanet}
+         />
+         <Planet activePlanet={activePlanet} />
+      </>
+   );
 }
-
-export default App;

@@ -1,0 +1,69 @@
+// colors
+
+$base-color: #070724;
+$dark-grey: #38384f;
+$planet-color: #419ebb;
+
+:root{
+	--color-mercury: hsl(194, 48%, 49%);
+	--color-venus: hsl(33, 82%, 61%);
+	--color-earth: hsl(263, 67%, 51%);
+	--color-mars: hsl(10, 63%, 51%);
+	--color-jupiter: hsl(2, 68%, 53%);
+	--color-saturn: rgb(203, 80, 32);
+	--color-uranus: hsl(169, 73%, 44%);
+	--color-neptune: hsl(222, 87%, 56%);
+}
+
+
+// type
+
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500&family=Spartan:wght@400;700&display=swap");
+
+body {
+   background-color: $base-color;
+   font-family: "Spartan", sans-serif;
+   font-size: 14px;
+   line-height: 25px;
+   color: #fff;
+}
+
+h1,
+h2 {
+   font-family: "Antonio", sans-serif;
+   font-weight: 400;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+h1 {
+   font-size: 80px;
+   line-height: 103px;
+}
+
+button {
+   width: 350px;
+   height: 48px;
+   text-align: left;
+   padding-left: 28px;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: transparent;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 0;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 25px;
+   letter-spacing: 2.57px;
+   cursor: pointer;
+   &:hover {
+      background-color: rgba(216, 216, 216, 0.2);
+   }
+   .active {
+      background-color: var(--color-mercury);
+   }
+   span {
+      color: rgba(255, 255, 255, 0.5);
+      margin-right: 28px;
+   }
+}
