@@ -19,11 +19,11 @@ export default function Header({ planets, handleActivePlanet, menuState, setMenu
    if(menuState === true){
       navlist.current.style.left = "0"
       hamburgerIcon.current.style.fill = "rgba(255,255,255,0.2)"
-      document.querySelector('body').style.overflow = "hidden"
+      document.querySelector('body').style.overflowY = "hidden"
    } else if (menuState === false ) {
       navlist.current.style.left = "100vw"
       hamburgerIcon.current.style.fill = "rgba(255,255,255)"
-      document.querySelector('body').style.overflow = "visible"
+      document.querySelector('body').style.overflowY = "visible"
    }
 
    return (
