@@ -133,7 +133,7 @@ header nav .nav-list .nav-link::before {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   width: 100%;
@@ -141,7 +141,7 @@ header nav .nav-list .nav-link::before {
 }
 
 header nav .nav-list .nav-link.active::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   width: 100%;
@@ -193,7 +193,7 @@ header nav .nav-list a {
   text-decoration: none;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   header nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -209,6 +209,13 @@ header nav .nav-list a {
   header nav .logo {
     margin-bottom: 39px;
   }
+  header nav .nav-list {
+    gap: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   header nav .nav-list .nav-link.active::before {
     top: -5px;
   }
@@ -217,7 +224,7 @@ header nav .nav-list a {
   }
 }
 
-@media (max-width: 840px) and (max-width: 550px) {
+@media (max-width: 1100px) and (max-width: 640px) {
   header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -307,7 +314,7 @@ header nav .nav-list a {
             justify-content: space-between;
   }
   header nav .nav-list .nav-link.active::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0px;
     width: 20px;
@@ -315,7 +322,7 @@ header nav .nav-list a {
     border-radius: 100%;
   }
   header nav .nav-list .nav-link:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0px;
     width: 20px;
@@ -325,7 +332,7 @@ header nav .nav-list a {
             transform: scaleX(1);
   }
   header nav .nav-list .nav-link:hover::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0px;
     width: 20px;
@@ -463,7 +470,7 @@ main .planet-article .submenu button.active.neptune {
   background-color: var(--color-neptune);
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   main {
     margin: 54px 40px 37px 40px;
   }
@@ -533,7 +540,7 @@ main .planet-article .submenu button.active.neptune {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   main {
     margin-top: 0;
   }
@@ -611,7 +618,7 @@ main .planet-article .submenu button.active.neptune {
     background-color: var(--color-neptune);
   }
   main .planet-article .submenu button.active::before {
-    content: '';
+    content: "";
     height: 4px;
     width: 100%;
     position: absolute;
@@ -659,7 +666,7 @@ footer .planet-stats .planet-stats-text {
   letter-spacing: -1.5px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1100px) {
   footer {
     margin: 0 40px 36px;
   }
@@ -676,7 +683,7 @@ footer .planet-stats .planet-stats-text {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
